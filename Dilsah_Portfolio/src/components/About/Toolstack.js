@@ -31,6 +31,7 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons" data-aos="flip-left" data-aos-duration="5" >
         <SiVercel />
       </Col>
+      
     </Row>
   );
 }

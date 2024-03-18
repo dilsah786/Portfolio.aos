@@ -16,7 +16,7 @@ AOS.init()
   },[])
 
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" >
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -38,7 +38,7 @@ AOS.init()
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img data-aos='fade-left' data-aos-delay='300' src={laptopImg} alt="about" className="img-fluid" />
+            <img data-aos='fade-left' data-aos-duration='800' data-aos-delay="50" src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">

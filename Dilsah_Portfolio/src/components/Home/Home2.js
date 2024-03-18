@@ -15,14 +15,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-
 function Home2() {
+
   useEffect(() => {
     AOS.init();
   },[]);
+
   return (
-    <>
-      <Container fluid className="home-about-section" id="about">
+    <div  >
+      <Container  fluid className="home-about-section" id="about">
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
@@ -62,7 +63,7 @@ function Home2() {
                 </i>
               </p>
             </Col>
-            <Col md={4} className="myAvtar" data-aos = "zoom-in-down" data-aos-duration = "800">
+            <Col md={4} className="myAvtar" data-aos="zoom-in" data-aos-duration="900" >
               <Tilt >
                 <img src={myImg} className="img-fluid" alt="avatar" />
               </Tilt>
@@ -104,7 +105,7 @@ function Home2() {
       <About />
       <Projects />
       <ResumeNew />
-    </>
+    </div>
   );
 }
 export default Home2;
