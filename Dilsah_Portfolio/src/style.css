@@ -629,7 +629,10 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  font-size: 6em !important;
+  display: flex;
+  padding: auto;
+  transform: scale(1.1) !important;
   overflow: hidden !important;
   border: 2.5px solid rgba(61, 212, 223, 0.883) !important;
 }

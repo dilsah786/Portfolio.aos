@@ -8,6 +8,7 @@ import {
   SiMacos,
   SiNetlify,
   SiGithub,
+  SiFigma,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -31,6 +32,10 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons" data-aos="flip-left" data-aos-duration="5" >
         <SiVercel />
       </Col>
+      <Col xs={4} md={2} className="tech-icons" data-aos="flip-left" data-aos-duration="5" >
+        <SiFigma />
+      </Col>
+
       
     </Row>
   );

@@ -10,6 +10,9 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
+
+
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
