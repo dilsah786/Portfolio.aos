@@ -16,9 +16,8 @@ import Projects from "./components/Projects/Projects";
 import ResumeNew from "./components/Resume/ResumeNew";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   const [load, upadateLoad] = useState(true);
@@ -31,28 +30,27 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
-  },[])
+  }, []);
   return (
     <div className="App">
-    <Router>
-      <Pre load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <NavBar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<ResumeNew />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Router>
+        <Pre load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <NavBar />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<ResumeNew />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
     </div>
-
   );
 };
 

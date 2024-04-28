@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+
+.tech_name {
+  display: none;
+  font-size: small;
+}
+
+.tech-icons:hover .tech_name{
+  display: block;
+}
